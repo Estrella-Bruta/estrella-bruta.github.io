@@ -199,7 +199,7 @@ h4 {
 }
 
 .form-registro {
-    max-width: 500px;
+    max-width: 600px;
     padding: 20px;
     margin: 0 auto;
     flex-direction: column;
@@ -215,15 +215,25 @@ h4 {
     padding: 30px;
     margin: 40px 0 60px 0;
     border-radius: 20px;
-    background-color: #4947477b;
+    background-image: url(/img/fondo-login1.avif);
+    /*background-color: #4947477b;*/
     border-left: 6px solid #0e0d0d93;
     align-content: center;
     max-height: 100vh;
     box-shadow: 2px 3px 4px #393636bb;
 }
 
+.login-title{
+    font-size: larger;
+    transition: transform 0.5s;
+}
+
+h4.login-title img:hover {
+    transform: scale(1.06);
+}
+
 label.form-label {
-    padding: 10px 0 0 0;
+    padding: 8px 0 0 0;
     margin-bottom: 5px;
     font-size:1rem;
     background: transparent;
@@ -234,9 +244,11 @@ label.form-label {
 
 input.form-control {
     background-color: transparent;
+    color: white;
     border:1px solid #393636c2;
-    margin-bottom: 15px; 
+    margin: 7px 10px; 
     padding: 10px;
+    height: min-content;
 }
 
 div.buttons {

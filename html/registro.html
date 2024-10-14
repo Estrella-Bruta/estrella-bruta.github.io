@@ -56,29 +56,37 @@
 
     <!--inicio del formulario de Registro-->
     <section class="section">
-        <form class="form-registro d-flex container-fluid">
+        <form class="d-flex container-fluid form-registro ">
 
-            <h4 class="">Registrar Usuario</h4>
+            <h4 class="registro-title p-4">Registrar Usuario</h4>
 
-            <label for="inputNombre" class="form-label">Nombre</label>
-            <input class="form-control" type="text" name="nombre" placeholder="Nombre" required minlength="3"
-                aria-label="default input example">
+            <div class="d-flex justify-content-center">
+                <label for="inputNombre" class="form-label "><img src="/img/user_icon.png" class="icon w-0 "></label>
+                <input class="form-control d-block" type="text" name="nombre" placeholder="Nombre" required
+                    minlength="3" aria-label="default input example">
 
-            <label for="inputApellido" class="form-label">Apellido</label>
-            <input class="form-control" type="text" name="apellido" placeholder="Apellido" required minlength="3"
-                aria-label="default input example">
-            <label for="inputEmail" class="form-label">Email</label>
-            <input class="form-control" type="email" name="email" id="" placeholder="Correo Electronico"
-                requiredaria-label="default input example">
-            <label for="inputUsuario" class="form-label">Usuario</label>
-            <input class="form-control" type="text" name="usuario" placeholder="Introdusca Usuario" required
-                aria-label="default input example">
-            <label for="inputPassword" class="form-label">Password</label>
-            <input class="form-control" type="password" name="password" id="" placeholder="ingresar contraseña" required
-                minlength="6" aria-label="default input example">
-            <label for="inputPassword" class="form-label">Confirmar password</label>
-            <input class="form-control" type="password" name="confirmar" id="" placeholder="ingresar contraseña"
-                required minlength="6" aria-label="default input example">
+                <label for="inputApellido" class="form-label"><img src="/img/user_icon.png" class="icon w-0"></label>
+                <input class="form-control" type="text" name="apellido" placeholder="Apellido" required minlength="3"
+                    aria-label="default input example">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <label for="inputEmail" class="form-label"><img src="/img/mail_icon.png" class="icon w-0"></label>
+                <input class="form-control" type="email" name="email" id="" placeholder="Correo Electronico"
+                    requiredaria-label="default input example">
+            </div>
+            <div></div>
+            <div class="d-flex justify-content-center">
+                <label for="inputUsuario" class="form-label"><img src="/img/usergreen_icon.png" class="icon w-0 "></label>
+                <input class="form-control" type="text" name="usuario" placeholder="Introdusca Usuario" required aria-label="default input example">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <label for="inputPassword" class="form-label"><img src="/img/password_security_icon.png" class="icon w-0 "></label>
+                <input class="form-control" type="password" name="password" id="" placeholder="ingresar contraseña" required minlength="6" aria-label="default input example">
+                <label for="inputPassword" class="form-label p-2">Confirmar</label>
+                <input class="form-control" type="password" name="confirmar" id="" placeholder="ingresar contraseña" required minlength="6" aria-label="default input example">
+            </div>
             <div class="buttons">
                 <button type="submith" value="enviar" class="btn btn-success me-4">Enviar</button>
                 <button type="reset" value="Cancelar" class="btn btn-danger me-4">Cancelar</button>
