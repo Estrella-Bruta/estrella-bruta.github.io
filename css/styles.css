@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
+
 /*head*/
 body {
     background: rgb(2,0,36);
@@ -16,8 +16,7 @@ header.head{
     width: 100%;
     height: 45vh;
     background-image: url(/img/plantas-pequenas.jpg);
-    opacity: #56535301;
-    opacity: 2;
+    opacity: 0.7;
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
@@ -116,24 +115,36 @@ div.carousel-inner {
     opacity: 3;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
 /*quienes_somos*/
 
 article.cards {
     display: flex;  
     flex-wrap: wrap; 
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px 50px;
 }
 
 .Presentacion {
-    width: 45%;
+    max-width: 40%;
     padding: 30px;
-    margin: 10px;
+    margin: 5px;
     background-color: #e0e5d63b;
     border-radius: 10px;
     box-shadow: 2px 3px 4px #12372a;
     text-align: center;
+    transition: transform 0.2s; 
 }
+
+.Presentacion:hover {  
+    transform: scale(1.02);  
+}
+
 .card-title{
     padding: 8px;
     font-weight: 700;
@@ -145,8 +156,8 @@ article.cards {
     font-size: larger;
 }
 .card-img-top {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
     padding: 6px;
     background-color: #3936369d;
     border-radius: 50%;
@@ -166,7 +177,7 @@ article.container {
     justify-content: space-between;
     height: 350px;   
     padding: 25px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }  
 
 .tex-acercade{
@@ -183,15 +194,16 @@ h4 {
     font-weight: 500;
     text-shadow:2px 3px 4px  #ffff;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 .form-registro {
-    max-width: 600px;
+    max-width: 500px;
     padding: 20px;
-    margin: 40px 0 60px 0;
+    margin: 0 auto;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #4947477b;
     border-left: 6px solid #0e0d0d93;
     align-content: center;
@@ -212,25 +224,27 @@ h4 {
 
 label.form-label {
     padding: 10px 0 0 0;
-    margin-bottom: 10px;
-    font-size:large;
+    margin-bottom: 5px;
+    font-size:1rem;
     background: transparent;
     border-bottom: 3px solid #4d4a4a;
     color: #080a0bda; 
+    
 }
 
 input.form-control {
     background-color: transparent;
     border:1px solid #393636c2;
-    margin-bottom: 10px; 
-    padding: 5px;
+    margin-bottom: 15px; 
+    padding: 10px;
 }
 
 div.buttons {
+    display: flex;
     padding: 8px 0 8px 0;
     margin: 10px 0 10px 0;
     font-size: medium;
-    display: flex;
+    
 }
 
 
@@ -238,28 +252,123 @@ div.buttons {
 
 footer{
     background-color: #b0b5b169;
+    color: white;
     display: flex;
+    padding: 5px;
     align-self: baseline;
     justify-content: center;
+
 }
 
 footer>div.red-icon {
+    display: flex;
+    justify-content: center;
     padding: 8px;
-    justify-content: left;
-    
+    margin-bottom: 8px;
+}
+
+.red-icon a >img{
+    transition:transform 0.3s ease;
+}
+.red-icon a >img:hover {
+    transform: scale(1.1);
 }
 
 div.autor>p.pie-pag {
-    padding: 10px;
+    padding: 5px;
     font-weight: 100;
-    font-size: 19px;
+    font-size: 16px;
     color: #191918;
     text-align: center;
+    text-decoration: none;
+    color: white;
+}
+p.links-footer{
+    color: white;
+    text-decoration: none;
+    /*justify-content:center;*/
+}
+p.links-footer :hover{
+    text-decoration: underline;
 }
 
+
 /*responsive*/
+
+/**/
+
 @media (max-width: 768px) {  
-    .section {  
-        width: 90%;   
+
+    header.head {  
+        height: 30vh;  
     }  
-}
+
+    div.content-name h1.name {  
+        font-size: 40px;  
+    }  
+
+    .nav-item {  
+        margin: 0 10px;   
+    }  
+
+    section.section {  
+        padding: 2rem;   
+    }  
+
+    div.tex-present > p {  
+        font-size: 18px; 
+    } 
+
+     
+}  
+
+@media (min-width: 480px) {  
+
+    .Presentacion {  
+        max-width: 60%;  
+        padding: 15px;  
+    }  
+    .card-img-top {  
+        width: 40%;   
+    }  
+    
+    article.cards {  
+        justify-content: center;  
+    }
+
+    .card-title {  
+        font-size: 1.25em;  
+    }  
+    .card-text {  
+        font-size: 1em;   
+    } 
+    
+    footer {  
+        display: flex;  
+        flex-direction: column; 
+        align-items: center; 
+    }  
+    
+    .red-icon {  
+        flex-direction: row;  
+        justify-content: center;  
+    }  
+    
+    .autor {  
+        text-align: center;   
+    }
+}  
+
+@media (max-width: 576px) {  
+    h4 {  
+        font-size: 1.5rem; 
+    }
+
+    .form-registro, .form-login {  
+        padding: 15px;   
+    }  
+
+    input.form-control {  
+        font-size: 0.9rem;  
+    }  
+}  
