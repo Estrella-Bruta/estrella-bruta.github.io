@@ -58,34 +58,41 @@
 
     <!--inicio del formulario de login-->
 
-    <section class="section d-flex " id="">
-        <form class="container-fluid form-login opacity: 0.7">
+    <section class="align-items-center h-100  section d-flex " id="">
+        <fieldset>
+        <form class="container-fluid form-login">
 
-            <h4 class="login-title p-2"><img class="wcm" src="/img/hojas-icon.webp" alt="hojas"> BIENVENIDOS <img src="/img/butterfly_icon.png" alt="mariposa" class="wcm"> </h4>
+            
+                <h4 class="login-title p-1"><img class="wcm" src="/img/hojas-icon.webp" alt="hojas"> BIENVENIDOS <img
+                        src="/img/butterfly_icon.png" alt="mariposa" class="wcm"> </h4>
 
-            <h4 class="registro-title p-4">Iniciar Sesion</h4>
+                <h4 class="registro-title p-2">Iniciar Sesion</h4>
 
-            <div class="d-flex">
-                <label for="inputEmail" class="form-label"><img src="/img/mail_icon.png" class="icon w-0">Email</label>
-                <input class=" form-control" type="email" name="email" id="" placeholder="Correo Electronico"
-                    requiredaria-label="default input example">
-            </div>
-            <div></div>
-
-            <div class="d-flex">
-                <label for="inputPassword" class="form-label"><img src="/img/password_icon.png"
-                        class="icon w-0 ">Pass</label>
-                <input class=" form-control" type="password" name="password" id="" placeholder="Ingresar Contraseña"
-                    required minlength="6" aria-label="default input example">
-            </div>
-
-            <div class="align-items-center container buttons">
-                <button type="submit" value="ingresar" class="btn btn-success me-4">Ingresar</button>
-                <button type="reset" value="Cancelar" class="btn btn-danger me-4">Cancelar</button>
-                <div>
-                    <p class="">¿Aun no te registraste?<a class="" href="/html/registro.html">Registrate aqui</a></p>
+                <div class="d-flex">
+                    <label for="inputEmail" class="form-label"><img src="/img/mail_icon.png"
+                            class="icon w-0">Email</label>
+                    <input class=" form-control" type="email" name="email" id="" placeholder="Correo Electronico"
+                        requiredaria-label="default input example">
                 </div>
-            </div>
+                <div></div>
+
+                <div class="d-flex">
+                    <label for="inputPassword" class="form-label"><img src="/img/password_icon.png"
+                            class="icon w-0 ">Pass</label>
+                    <input class=" form-control" type="password" name="password" id="" placeholder="Ingresar Contraseña"
+                        required minlength="6" aria-label="default input example">
+                </div>
+
+                <div class="column justify-content-center ">
+                    <div class="align-items-center buttons">
+                        <button type="submit" value="ingresar" class="btn btn-success me-4">Ingresar</button>
+                        <button type="reset" value="Cancelar" class="btn btn-danger me-4">Cancelar</button>
+                    </div>
+                    <div>
+                        <p>¿Aun no te registraste?<a class="" href="/html/registro.html">Registrate aqui</a></p>
+                    </div>
+                </div>
+            </fieldset>
         </form>
 
     </section>

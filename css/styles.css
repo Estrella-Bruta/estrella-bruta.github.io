@@ -83,13 +83,13 @@ a.nav-link:hover{
 
 input.form-control:hover {  
     border-radius: 20px; 
-    background-color:#393636; 
+    background-color:#393636bc; 
     color: white;
 } 
 
 button.btn {
     font-weight: 200;
-    background-color: #3936367c;
+    background-color:rgba(0, 0, 0, 0.511);;
 }
 
 /*Principal*/
@@ -204,6 +204,7 @@ h4 {
     margin: 0 auto;
     flex-direction: column;
     border-radius: 15px;
+    background-image: url(/img/fondo-login3.jpg);
     background-color: #4947477b;
     border-left: 6px solid #0e0d0d93;
     align-content: center;
@@ -213,9 +214,10 @@ h4 {
 .form-login {
     max-width: 600px;
     padding: 30px;
-    margin: 40px 0 60px 0;
+    /*margin: 40px 0 60px 0;*/
     border-radius: 20px;
-    background-image: url(/img/fondo-login1.avif);
+    background-image: url(/img/fondo-login3.jpg);
+    background-repeat: no-repeat;
     /*background-color: #4947477b;*/
     border-left: 6px solid #0e0d0d93;
     align-content: center;
@@ -224,7 +226,8 @@ h4 {
 }
 
 .login-title{
-    font-size: larger;
+    font-size: 30px;
+    font-weight: 600;
     transition: transform 0.5s;
 }
 
@@ -243,12 +246,13 @@ label.form-label {
 }
 
 input.form-control {
-    background-color: transparent;
+    background-color:rgba(0, 0, 0, 0.26);
     color: white;
     border:1px solid #393636c2;
     margin: 7px 10px; 
     padding: 10px;
     height: min-content;
+    /*max-width: 70%;*/
 }
 
 div.buttons {
@@ -357,7 +361,7 @@ p.links-footer :hover{
     
     footer {  
         display: flex;  
-        flex-direction: column; 
+        /*flex-direction: column; */
         align-items: center; 
     }  
     
