@@ -126,14 +126,14 @@ div.carousel-inner {
 article.cards {
     display: flex;  
     flex-wrap: wrap; 
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px 50px;
 }
 
 .Presentacion {
     max-width: 40%;
     padding: 30px;
-    margin: 5px;
+    margin: 5px 1%;
     background-color: #e0e5d63b;
     border-radius: 10px;
     box-shadow: 2px 3px 4px #12372a;
@@ -339,11 +339,6 @@ p.links-footer :hover{
 }  
 
 @media (min-width: 480px) {  
-
-    .Presentacion {  
-        max-width: 60%;  
-        padding: 15px;  
-    }  
     .card-img-top {  
         width: 40%;   
     }  
@@ -354,15 +349,6 @@ p.links-footer :hover{
 
     .card-title {  
         font-size: 1.25em;  
-    }  
-    .card-text {  
-        font-size: 1em;   
-    } 
-    
-    footer {  
-        display: flex;  
-        /*flex-direction: column; */
-        align-items: center; 
     }  
     
     .red-icon {  
@@ -386,5 +372,18 @@ p.links-footer :hover{
 
     input.form-control {  
         font-size: 0.9rem;  
+    }  
+    footer {  
+        display: flex;  
+        flex-direction: column;
+        align-items: center; 
+    } 
+
+    .Presentacion {  
+        min-width: 60%;  
+        padding: 15px;  
+    } 
+    .card-text {  
+        font-size: 0.1em;   
     }  
 }  
