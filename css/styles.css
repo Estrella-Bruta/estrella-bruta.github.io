@@ -340,6 +340,22 @@ p.links-footer :hover{
         display: contents;
         flex-direction: row;
     }
+
+    article.container {  
+        flex-direction: column;  
+    }  
+
+    .location-info, .contact-info, .wholesale-info {  
+        height: auto;   
+        margin-bottom: 13px;
+    }  
+
+    .tex-acercade {  
+        font-weight: 300;  
+        font-size: 1.3rem;  
+        padding: 4px;  
+        margin: 10px 0 20px 0;  
+    } 
      
 }  
 
@@ -347,6 +363,7 @@ p.links-footer :hover{
     /*header.head {  
         height: 100%;  
     }*/
+    
     .card-img-top {  
         width: 35%;   
     }  
@@ -390,6 +407,7 @@ p.links-footer :hover{
     input.form-control {  
         font-size: 0.9rem;  
     }  
+
     footer {  
         display: flex;  
         flex-direction: column;
