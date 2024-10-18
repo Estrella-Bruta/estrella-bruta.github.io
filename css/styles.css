@@ -313,11 +313,12 @@ p.links-footer :hover{
 
 /**/
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {    
 
     header.head {  
-        height: 30vh;  
-    }  
+            height: 30vh;  
+        }  
+    
 
     div.content-name h1.name {  
         font-size: 40px;  
@@ -335,12 +336,19 @@ p.links-footer :hover{
         font-size: 18px; 
     } 
 
+    .acercade {
+        display: contents;
+        flex-direction: row;
+    }
      
 }  
 
-@media (min-width: 480px) {  
+@media (min-width: 480px) { 
+    /*header.head {  
+        height: 100%;  
+    }*/
     .card-img-top {  
-        width: 40%;   
+        width: 35%;   
     }  
     
     article.cards {  
@@ -362,6 +370,15 @@ p.links-footer :hover{
 }  
 
 @media (max-width: 576px) {  
+
+    header.head {  
+        height: 100%;  
+    } 
+
+    div.content-name h1.name {  
+        font-size: 30px;  
+    }
+
     h4 {  
         font-size: 1.5rem; 
     }
@@ -381,9 +398,29 @@ p.links-footer :hover{
 
     .Presentacion {  
         min-width: 60%;  
-        padding: 15px;  
+        padding: 15px;
+        columns: 2;  
+        display: flex;
+        flex-direction: column;
+        
     } 
+
     .card-text {  
         font-size: 0.1em;   
-    }  
+    } 
+    
+    .card-img-top {  
+        width: 40%;   
+    } 
+
+    .acercade {
+        display: flex;
+        /*flex-wrap:wrap;*/
+        flex-direction: row;
+    }
+
+    section.section {  
+        flex-direction: column;
+    }
+
 }  
